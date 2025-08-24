@@ -1,0 +1,117 @@
+1.History and Features of C
+
+Who is the father of C language?
+ Dennis Ritchie
+
+In which year was C language developed?
+ In 1972 
+
+C was developed at which research center?
+ At bell laboratories
+
+C is a successor of which programming language?
+C is a successor to the programming language B. 
+
+Name two main features of C language.
+Portability
+Low-level Memory Access (Pointers)
+
+Why is C called a middle-level language?
+C is called a middle-level language because it possesses characteristics of both low-level and high-level programming languages. 
+
+What are the applications of C language?
+Operating Systems
+ Embedded Systems
+Compilers and Interpreters
+Database Management Systems (DBMS)
+System Utilities
+Game Development
+Networking and Cybersecurity 
+High-Performance Computing and Scientific Researce
+
+Why is C called a portable language?
+C is considered a portable language because a C program written on one machine can typically be compiled and run on different hardware platforms and operating systems with little to no modification of the source code
+
+2. Structure of a C Program
+
+What are the main sections of a C program?
+Documentation.
+Link, Definition.
+Global Declaration.
+Main() function.
+Subprograms.
+
+What is the use of the #include directive?
+The #include directive in C is used to incorporate the contents of a specified file into your source code before compilation. 
+
+Why is main() function important in C?
+The main() function is of paramount importance in C programming because it serves as the entry point for program execution. This means that when a C program is compiled and run, the operating system or runtime environment begins executing the code from within the main() function.
+
+Write the general structure of a C program.
+
+What is the difference between header files and source code files?
+Header files act as blueprints or contracts, outlining what functionality is available, while source files provide the concrete implementation details of that functionality. This separation facilitates modularity, allowing different source files to use the same declared functions or classes without needing access to their full implementation, which is crucial for separate compilation and library creation.
+
+What is the role of the return 0; statement in main()?
+The return 0; statement in the main() function serves as an exit code, communicating to the operating system that the program executed successfully without any errors. 
+
+3. Constants and Variables
+
+What is a variable in C?
+In C programming, a variable is a named storage location in memory used to hold data. It acts as a container for values that can change during the execution of a program.
+
+Define constants in C.
+In C programming, a constant is a fixed value that cannot be altered during the execution of a program. Once a constant is defined and assigned a value, that value remains unchanged throughout the program's lifecycle.
+
+What is the difference between a variable and a constant?
+A variable is a placeholder for a value that can change, while a constant is a placeholder for a value that remains fixed and cannot be altered. 
+
+Which keyword is used to define constants in C?
+In C programming, the const keyword is used to define a constant.
+
+Give an example of an integer constant.
+
+What is the difference between symbolic constant and literal constant?
+Literal Constant: A literal constant is a fixed, explicit value that is directly written into the source code. It is a value that "is what it is." Examples include numbers (e.g., 10, 3.14), characters (e.g., 'A'), or strings (e.g., "Hello"). Literal constants do not have a name or identifier associated with them in the code; their value is directly embedded.
+Symbolic Constant: A symbolic constant, also known as a named constant, is a fixed value that is represented by a name or identifier. Instead of directly using the literal value, you use a meaningful name that the compiler or preprocessor associates with that value. This improves code readability and maintainability. In C/C++, symbolic constants are often defined using the #define preprocessor directive or the const keyword.
+
+Can we change the value of a constant during execution?
+In C programming, the value of a constant cannot be changed during program execution. 
+
+4. Data Types and Type Conversion
+
+What are the basic data types in C?
+The basic data types in C, also known as primary or fundamental data types, are the building blocks for storing various kinds of information. These types are: 
+int:
+Used to store whole numbers (integers) without any decimal points. For example, 10, -5, 0.
+char:
+Used to store a single character. Characters are enclosed within single quotes, such as 'A', 'z', '7', '$'.
+float:
+Used to store single-precision floating-point numbers, which are numbers with decimal points. They provide a certain level of precision for decimal values. For example, 3.14, -0.5.
+double:
+Used to store double-precision floating-point numbers. double variables offer greater precision and a larger range compared to float variables, making them suitable for more accurate decimal calculations. For example, 1.79769e+308.
+void:
+A special data type that signifies the absence of a type or value. It is commonly used with functions that do not return a value or with pointers that can point to any data type.
+
+What is the difference between int and float?
+int is used to store whole numbers, meaning numbers without any decimal or fractional part.
+float is used to store numbers that can have a decimal or fractional part, also known as real numbers.
+
+What is the size of char in C?
+the char data type is defined to have a size of 1 byte. 
+
+What is the range of int in C (16-bit compiler)?
+The int data type typically occupies 2 bytes (16 bits) of memory.
+
+Define type conversion in C.
+Type conversion in C is the process of converting a value from one data type to another. This is necessary when operations or assignments involve variables of different data types, ensuring compatibility and correct calculations. 
+
+What is the difference between implicit and explicit type conversion?
+Implicit type conversion, or widening conversion, happens automatically without programmer intervention when a smaller data type is converted to a larger one, often in a safe manner that preserves data. In contrast, explicit type conversion, or narrowing conversion, requires the programmer to use type casting to manually convert a larger data type to a smaller one, which may result in data loss or precision reduction. 
+What is type casting? Give an example.
+Type casting, or type conversion, is the process of changing a value from one data type to another, such as converting an integer to a float or a string to an integer, to allow for compatibility in operations or to store data appropriately. For example, if you have an integer 4 and want to perform division that results in a decimal, you can type cast the integer to a float, like (float)4, to get 4.0, which then allows for accurate decimal division. 
+
+What is the difference between signed and unsigned integers?
+The main difference is that signed integers can store both positive and negative values, while unsigned integers can only store non-negative values (zero and positive numbers). Because unsigned integers don't need a bit to represent the sign, they can store a larger range of positive values than a signed integer with the same number of bits.
+ 
+
