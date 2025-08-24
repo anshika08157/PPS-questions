@@ -113,5 +113,68 @@ Type casting, or type conversion, is the process of changing a value from one da
 
 What is the difference between signed and unsigned integers?
 The main difference is that signed integers can store both positive and negative values, while unsigned integers can only store non-negative values (zero and positive numbers). Because unsigned integers don't need a bit to represent the sign, they can store a larger range of positive values than a signed integer with the same number of bits.
- 
+
+5. Operators and Expressions
+
+What is an operator in C?
+an operator is a symbol that instructs the compiler to perform a specific operation on one or more operands
+
+List the types of operators in C.
+The primary types of operators in C are arithmetic, logical, relational, conditional, bitwise, and assignment.
+
+What is the difference between = and ==?
+= (Assignment Operator): This operator is used to assign a value to a variable. It takes the value on its right-hand side and stores it in the variable on its left-hand side.
+== (Equality Comparison Operator): This operator is used to compare two values to determine if they are equal. It returns a Boolean result (typically true or false, or 1 or 0 depending on the language) indicating whether the values on both sides are equivalent.
+
+Explain the difference between pre-increment (++i) and post-increment (i++).
+Pre-increment (++i)
+With pre-increment, the variable's value is incremented before it is used in the current expression.
+
+Post-increment (i++)
+With post-increment, the variable's value is used in the current expression first, and then it is incremented.
+
+What is the use of the modulus (%) operator?
+The modulus operator (%) in C is an arithmetic operator that computes the remainder of an integer division. When a % b is evaluated, it returns the remainder when a is divided by b. 
+
+What is operator precedence in C?
+Operator precedence in C programming defines the order in which operators are evaluated within an expression containing multiple operators. 
+
+What is the difference between logical AND (&&) and bitwise AND (&)?
+Logical AND (&&):
+Evaluates the truthiness of entire operands (expressions or values) and returns a boolean result (typically true or false, or their numerical equivalents like 1 or 0).
+Bitwise AND (&): 
+Performs a binary AND operation on each corresponding bit of its operands. It returns a new value where each bit is 1 only if both corresponding bits in the operands were 1.
+
+What is an expression in C? Give an example.
+In C programming, an expression is a combination of operators, operands, and/or function calls that evaluates to a single value.
+
+6. Input and Output Functions
+
+What is the difference between printf() and scanf()?
+printf() is used for output:
+It displays formatted data to the standard output device, typically the console.
+scanf() is used for input:
+It reads formatted data from the standard input device, typically the keyboard.
+
+Why do we use format specifiers in C?
+format specifiers are crucial for ensuring correct data handling and providing flexible formatting capabilities in C's input/output operations.
+
+What is the format specifier for float?
+The primary format specifier for a standard float in C is %f.
+
+Which header file is required for printf() and scanf()?
+The header file required for using printf() and scanf() functions in C programming is stdio.h.
+
+Write the syntax of scanf() function.
+The scanf() function in C is used to read formatted input from the standard input stream (usually the keyboard).
+
+How can we take a single character as input in C?
+In C, a single character can be taken as input using several methods, with getchar() and scanf() being the most common.
+
+How can we print multiple values using printf()?
+To print multiple values using printf(), include multiple format specifiers within the format string and provide corresponding arguments in the same order.
+
+What happens if you don’t use & in scanf()?
+If & is not placed before i , then scanf will try to write the input data to the memory location i instead of &i.
+
 
